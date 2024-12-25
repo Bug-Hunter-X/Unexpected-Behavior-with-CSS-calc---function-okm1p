@@ -1,0 +1,20 @@
+/* bugSolution.css */
+
+.container {
+  width: 500px; /* Example container width */
+  border: 1px solid black;
+}
+
+.element {
+  /* Correct way to handle percentage subtraction */
+  width: calc(50% - 20px); /* Subtract pixels instead of percentages */
+  background-color: lightblue;
+  height: 100px;
+}
+
+/*Correct way to handle unit mixing.  Convert everything to px */
+.element2 {
+  width: calc(50% - 20px);
+  height: calc(100px + 2em); /*Convert em to px using javascript*/ 
+  background-color: lightgreen; 
+} 
